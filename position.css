@@ -1,0 +1,70 @@
+/*Position Area Start*/
+.container {
+ display: flex;
+ position: relative;
+}
+.lll {
+ text-align: center;
+ color: aqua;
+}
+.box {
+ width: 200px;
+ height: 200px;
+ margin: 6px;
+ background-color: steelblue;
+ border: 1px solid red;
+}
+.box-2 {
+ position: absolute;
+ top: 50px;
+ left: 50px;
+}
+.box-3 {
+ z-index: 1;
+}
+/*Position Area End*/
+
+
+
+
+/*Frame Area Start*/
+.photo-album {
+ display: flex;
+ flex-wrap: wrap;
+}
+.photo-frame {
+ height: 300px;
+ width: 300px;
+ border: 10px solid greenyellow;
+ border-radius: 10px;
+ position: relative;
+ margin: 10px;
+ overflow: hidden;
+}
+.photo-frame .photo img { 
+ width: 100%;
+}
+.photo-frame:hover .photo img {
+ transform: skew(50deg) /*rorete(360deg),,transform:scale(1.2) */;
+ transition:  transform 5s;
+}
+.photo-datile {
+ position: absolute;
+ display: none;
+ height: 300px;
+ width: 300x;
+ top: 0;
+}
+.photo-frame:hover .photo-datile {
+ display: block;
+ background-color: rgba(228, 165, 32, 0.7);
+}
+.photo-frame:hover .photo-datile h3 {
+ color: white;
+ background-color: black;
+ text-align: center;
+}
+.photo-frame:hover .photo-datile p {
+ color: white;
+}
+/*Frame Area End*/
